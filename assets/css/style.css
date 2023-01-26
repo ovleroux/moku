@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-size: 1vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: auto;
+}
+
+.grid > div {
+  position: relative;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+figure {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+
+.grid__element__text {
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: calc(var(--vh)*50 - var(--size)/2);
+  left: calc(50vw - var(--size)/2);
+  opacity: 0;
+  transition: opacity .75s ease-out;
+}
+
+@media (min-width:43.75rem) {
+  .grid__element__text__wrapper {
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+}
+
+@media (min-width:43.75rem) {
+  .grid__element__text__wrapper {
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+}
+
+@media (min-width:43.75rem) {
+  .grid__element__text__wrapper {
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+}
+
